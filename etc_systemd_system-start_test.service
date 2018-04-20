@@ -1,0 +1,11 @@
+[Unit]
+Description = send text demo
+After = network.target
+
+[Service]
+Type=simple
+# Change this as appropriate
+ExecStart=/home/pi/start_demo.sh
+
+[Install]
+WantedBy=multi-user.target
